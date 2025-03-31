@@ -21,6 +21,6 @@ right_motor = Motor(Port.C)
 # Write your program here.
 ev3.speaker.beep()
 
-# while True:
-left_motor.run(500)
-right_motor.run(500)
+while True:
+    left_motor.run(500)
+    right_motor.run(500)
