@@ -17,13 +17,18 @@ ev3 = EV3Brick()
 left_motor = Motor(Port.B)
 right_motor = Motor(Port.C)
 
-chasis = DriveBase(left_motor, right_motor, wheel_diameter=55.5, axle_track=104)
+chasis = DriveBase(left_motor, right_motor, wheel_diameter=44, axle_track=130)
 
 # Write your program here.
 ev3.speaker.beep()
-chasis.straight(200)
-chasis.turn(-155)
-chasis.straight(100)
-
-
-
+chasis.straight(270)
+chasis.turn(90)
+chasis.straight(240)
+chasis.turn(-90)
+chasis.straight(600)
+chasis.turn(-166)
+chasis.straight(460)
+chasis.turn(*90)
+chasis.straight(140)
+chasis.turn(90)
+chasis.straight(140)
